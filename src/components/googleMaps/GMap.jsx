@@ -7,10 +7,7 @@ const GMap = () => {
 
     // list of icons
     const iconList = {
-        icon1: 'https://cdn1.iconfinder.com/data/icons/Map-Markers-Icons-Demo-PNG/256/Map-Marker-Flag--Right-Chartreuse.png',
-        icon2: 'https://cdn2.iconfinder.com/data/icons/IconsLandVistaMapMarkersIconsDemo/256/MapMarker_Marker_Outside_Chartreuse.png',
-        icon3: 'https://cdn1.iconfinder.com/data/icons/Map-Markers-Icons-Demo-PNG/256/Map-Marker-Ball-Right-Azure.png',
-        icon4: 'https://cdn1.iconfinder.com/data/icons/Map-Markers-Icons-Demo-PNG/256/Map-Marker-Marker-Outside-Pink.png'
+        icon: 'https://cdn1.iconfinder.com/data/icons/Map-Markers-Icons-Demo-PNG/256/Map-Marker-Marker-Outside-Pink.png'
     }
 
     const [places, setPlaces] = useState([])
@@ -26,7 +23,7 @@ const GMap = () => {
                     const { coordinates } = place.address.location
 
                     if (coordinates[0] && coordinates[1]) {
-                        validLocations.push({ lat: coordinates[0], lng: coordinates[1], icon: iconList.icon4 })
+                        validLocations.push({ lat: coordinates[0], lng: coordinates[1], icon: iconList.icon })
                     }
                 })
 
@@ -42,7 +39,7 @@ const GMap = () => {
         var bounds = new window.google.maps.LatLngBounds();
         places?.map(x => {
             const marker = createMarker(x);
-            bounds.extend(marker.position)
+            return bounds.extend(marker.position)
         })
         googleMap.fitBounds(bounds); // the map to contain all markers
     }
@@ -50,14 +47,15 @@ const GMap = () => {
     useEffect(() => {
         initGoogleMap()
         loadPlaces()
-        loadMarker()
     }, []);
+
+    useEffect(() => loadMarker())
 
     // initialize the google map
     const initGoogleMap = () => {
         return new window.google.maps.Map(googleMapRef.current, {
-            center: { lat: 40.153375, lng: -3.644853 },
-            zoom: 15
+            center: { lat: 40.45328506321756, lng: -3.800394610063071 },
+            zoom: 14
         });
     }
     // create marker on google map
