@@ -1,24 +1,31 @@
 import { useContext } from "react"
 import { AuthContext } from "../../context/auth.context"
-// import { Card } from 'react-bootstrap'
+import { Card, Button, NavLink, Nav } from 'react-bootstrap'
+import { Link } from "react-router-dom"
 
 const ProfilePage = () => {
     const { user } = useContext(AuthContext)
     return (
-        // <Card className="bg-dark text-white">
-        //     <Card.Img src={user.image} alt="Card image" />
-        //     <Card.ImgOverlay>
-        //         <Card.Title>{user.username}</Card.Title>
-        //         <Card.Text>
-        //             {user.email}
-        //         </Card.Text>
-        //     </Card.ImgOverlay>
-        // </Card>
+        <>
+            <Card>
+                <Card.Header>Portal personal</Card.Header>
+                <Card.Body>
+                    <Card.Title>¡Hola, {user.username}!</Card.Title>
+                    <Card.Text>
+                        Bienvenido a tu portal personal:
+                    </Card.Text>
+                    <Card.Text>
+                        este es tu correo electrónico: {user.email}
+                    </Card.Text>
 
-        <h1>Estás en tu perfil, {user?.username}</h1>
+                    <Nav className="ms-auto">
+{/* //<NavLink to="/inicio" className='nav-link active'>inicio</NavLink> */}
+                        <Link to="/inicio" className=" btn btn-dark  " >inicio</Link>
+                    </Nav>
+                </Card.Body>
+            </Card>
+        </>
     )
-        // :
-        // null
 }
 
 export default ProfilePage
