@@ -39,9 +39,30 @@ const Navigation = () => {
                                 :
                                 <>
 
-                                        {/* ventana modal para despèdirse */}
+                                    {/* ventana modal para despèdirse */}
                                 </>
                         }
+                        <Nav.Link href="#home" disabled></Nav.Link>
+                        <Nav.Link href="#home" disabled></Nav.Link>
+                        <Nav.Link href="#home" disabled></Nav.Link>
+                        <Nav.Link href="#home" disabled></Nav.Link>
+                        <Nav.Link href="#home" disabled></Nav.Link>
+                        <Nav.Link href="#home" disabled></Nav.Link>
+                        <Nav.Link href="#home" disabled></Nav.Link>
+                        <Nav.Link href="#home" disabled></Nav.Link>
+                        <Nav.Link href="#home" disabled></Nav.Link>
+                        <Nav.Link href="#home" disabled></Nav.Link>
+                        <Nav.Link href="#home" disabled></Nav.Link>
+                        <Nav.Link href="#home" disabled></Nav.Link>
+                        <Nav.Link href="#home" disabled></Nav.Link>
+                        <Nav.Link href="#home" disabled></Nav.Link>
+                        <Nav.Link href="#home" disabled></Nav.Link>
+                        <Nav.Link href="#home" disabled></Nav.Link>
+                        <Nav.Link href="#home" disabled></Nav.Link>
+                        <Nav.Link href="#home" disabled></Nav.Link>
+                        <Nav.Link href="#home" disabled></Nav.Link>
+
+
                     </Navbar.Collapse>
                     <NavDropdown title="Dropdown" id="basic-nav-dropdown">
                         <NavLink to="/inicio" className='nav-link active'>Inicio</NavLink>
