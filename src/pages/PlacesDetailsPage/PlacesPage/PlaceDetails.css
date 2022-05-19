@@ -1,0 +1,10 @@
+.placeDetails img:hover {
+    width: 105%;
+    border: solid 2px black;
+    border-radius: 50px
+}
+
+.placeDetails img {
+    border-radius: 50px;
+    width: 100%
+}

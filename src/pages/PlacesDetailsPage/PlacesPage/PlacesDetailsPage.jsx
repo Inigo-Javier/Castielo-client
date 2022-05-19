@@ -3,6 +3,7 @@ import { useParams, Link } from 'react-router-dom'
 import placesService from './../../../services/Places.services'
 import { Container, Row, Col, Button } from 'react-bootstrap'
 import Loader from './../../../components/Loader/Loader'
+import './PlaceDetails.css'
 
 
 function PlacesDetailsPage() {
@@ -26,7 +27,7 @@ function PlacesDetailsPage() {
             ?
             <Loader />
             :
-            <Container>
+            <Container className="placeDetails">
                 <h1>Detalles de {placeDetails.title}</h1>
                 <hr />
                 <Row>
@@ -35,7 +36,7 @@ function PlacesDetailsPage() {
                         <p>{placeDetails.description}</p>
                     </Col>
                     <Col md={{ span: 6 }}>
-                        <img style={{ width: '100%' }} src={placeDetails.imageUrl} alt={placeDetails.title} />
+                        <img src={placeDetails.imageUrl} alt={placeDetails.title} />
                     </Col>
                     <Link to="/lugares">
                         <Button variant="dark">Volver</Button>

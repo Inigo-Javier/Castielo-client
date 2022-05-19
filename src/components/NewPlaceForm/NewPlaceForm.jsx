@@ -18,6 +18,7 @@ const NewPlaceForm = ({ fireFinalActions }) => {
         lat: '',
         lng: ''
     })
+    const { title, description, imageUrl, type, village, country, street, lat, lng } = placesData
 
     const [loadingImage, setLoadingImage] = useState(false)
 
@@ -37,7 +38,6 @@ const NewPlaceForm = ({ fireFinalActions }) => {
             .catch(err => console.log(err))
 
     }
-    const { title, description, imageUrl, type, village, country, street, lat, lng } = placesData
 
     const handleInputChange = e => {
         const { value, name } = e.currentTarget
