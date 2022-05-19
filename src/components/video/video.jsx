@@ -17,18 +17,24 @@ const Video = () => {
 
                 <div class="vid-info">
 
-                    <h1>YouTube Fullscreen Background Demo</h1>
+                    <h1>Proyecto Castielo</h1>
                     <p>
-                        The International Space Station orbits the Earth every 92 minutes, with its crew seeing a sunrise 15 times a day. It exists as a scientific, educational, and engineering platform in low orbit, 330 to 435 kilometres above the Earth.
-
+                        El proyecto castielo es una iniciativa que pretende dar a conocer los paisajes peculiares de la peninsula Ibérica.Su belleza natural y cultural incomparable dentro del marco europeo.
                     </p>
-                    <a href="/inicio">Full article</a>
+                    <p>
+                        Nos encantaría que participases disfrutando de los paisajes y rincones que tenemos reservados para ti.
+                    </p>
+                    <a href="/inicio">Entra en tu casa</a>
                     <h3>YouTube Fullscreen Background Demo</h3>
                     <p>
-                        The International Space Station orbits the Earth every 92 minutes, with its crew seeing a sunrise 15 times a day. It exists as a scientific, educational, and engineering platform in low orbit, 330 to 435 kilometres above the Earth.
-
+                        Si quieres dar un paso mas y regalarnos tu rincón preferido a la comunidad que estamos formando, estaríamos encantados con tu aportación.
                     </p>
 
+                    <a href="/lugares">Full article</a>
+
+                    <p>
+                        Por último, pero no menos importante, únete a la comunidad.Nos vemos pronto amigo.
+                    </p>
                     <a href="/registro">Full article</a>
                 </div>
             </div>
