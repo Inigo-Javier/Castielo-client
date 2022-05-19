@@ -1,0 +1,12 @@
+.container1 {
+    background-image: url("https://www.telemundo.com/sites/nbcutelemundo/files/styles/fit-1240w/public/12-vinedos-en-california.jpg?ramen_itok=iqwQftIcTf");
+    width: 1264px;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container1>h1 {
+    display: flex;
+    justify-content: center;
+}

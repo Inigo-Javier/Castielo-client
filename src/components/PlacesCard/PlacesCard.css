@@ -1,0 +1,8 @@
+.PlacesCard {
+    margin-bottom: 40px;
+}
+
+.PlacesCard img {
+    height: 250px;
+    object-fit: cover;
+}
