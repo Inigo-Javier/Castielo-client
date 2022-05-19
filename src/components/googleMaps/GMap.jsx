@@ -42,7 +42,7 @@ const GMap = () => {
         var bounds = new window.google.maps.LatLngBounds();
         places?.map(x => {
             const marker = createMarker(x);
-            return bounds.extend(marker.position)
+            bounds.extend(marker.position)
         })
         googleMap.fitBounds(bounds); // the map to contain all markers
     }
