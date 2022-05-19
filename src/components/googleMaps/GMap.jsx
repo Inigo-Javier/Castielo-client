@@ -31,6 +31,7 @@ const GMap = () => {
                 })
 
                 setPlaces(validLocations)
+
             })
             .catch(err => console.log(err))
     }
@@ -47,6 +48,7 @@ const GMap = () => {
     }
 
     useEffect(() => {
+        initGoogleMap() 
         loadPlaces()
         loadMarker()
     }, []);
@@ -55,7 +57,7 @@ const GMap = () => {
     const initGoogleMap = () => {
         return new window.google.maps.Map(googleMapRef.current, {
             center: { lat: 40.153375, lng: -3.644853 },
-            zoom: 50
+            zoom: 15
         });
     }
     // create marker on google map

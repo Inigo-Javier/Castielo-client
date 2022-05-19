@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './components/App.jsx';
-import { BrowserRouter as Router } from 'react-router-dom'
+import { HashRouter as Router } from 'react-router-dom'
 
 // BOOTSTRAP STYLING
 import 'bootstrap/dist/css/bootstrap.min.css';
