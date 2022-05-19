@@ -25,17 +25,17 @@ const Video = () => {
                         Nos encantaría que participases disfrutando de los paisajes y rincones que tenemos reservados para ti.
                     </p>
                     <a href="/inicio">Entra en tu casa</a>
-                    <h3>YouTube Fullscreen Background Demo</h3>
+
                     <p>
                         Si quieres dar un paso mas y regalarnos tu rincón preferido a la comunidad que estamos formando, estaríamos encantados con tu aportación.
                     </p>
 
-                    <a href="/lugares">Full article</a>
+                    <a href="/lugares">Disfruta de los rincones</a>
 
                     <p>
                         Por último, pero no menos importante, únete a la comunidad.Nos vemos pronto amigo.
                     </p>
-                    <a href="/registro">Full article</a>
+                    <a href="/registro">únete</a>
                 </div>
             </div>
         </div>

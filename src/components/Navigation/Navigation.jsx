@@ -32,7 +32,7 @@ const Navigation = () => {
                                     </Nav>
 
                                     <Nav className="ms-auto">
-                                        <NavLink to="/video" className='nav-link active'>ver</NavLink>
+                                        <NavLink to="/video" className='nav-link active'>conócenos</NavLink>
                                     </Nav>
                                     {user && <NavLink to="/perfil" className='nav-link active'>Bienvenido/a, {user.username}</NavLink>}
                                 </>
@@ -64,7 +64,7 @@ const Navigation = () => {
 
 
                     </Navbar.Collapse>
-                    <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+                    <NavDropdown title="Empieza" id="basic-nav-dropdown">
                         <NavLink to="/inicio" className='nav-link active'>Inicio</NavLink>
                         <NavLink to="/lugares" className='nav-link active'>Galería</NavLink>
 
