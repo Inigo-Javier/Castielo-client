@@ -1,6 +1,6 @@
 import { useContext } from "react"
 import { AuthContext } from "../../context/auth.context"
-import { Card, Button, NavLink, Nav } from 'react-bootstrap'
+import { Card, Nav } from 'react-bootstrap'
 import { Link } from "react-router-dom"
 
 const ProfilePage = () => {
@@ -19,7 +19,7 @@ const ProfilePage = () => {
                     </Card.Text>
 
                     <Nav className="ms-auto">
-{/* //<NavLink to="/inicio" className='nav-link active'>inicio</NavLink> */}
+                        {/* //<NavLink to="/inicio" className='nav-link active'>inicio</NavLink> */}
                         <Link to="/inicio" className=" btn btn-dark  " >inicio</Link>
                     </Nav>
                 </Card.Body>

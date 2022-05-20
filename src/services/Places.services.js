@@ -29,6 +29,11 @@ class PlacesService {
     savePlace = place => {
         return this.api.post('/create', place)
     }
+
+    // editPlace = (id, placesFeatures) => {
+    //     return this.api.put(`/${id}/edit-features`, placesFeatures)
+    // }
+
 }
 
 const placesService = new PlacesService()
