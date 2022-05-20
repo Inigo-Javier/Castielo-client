@@ -16,3 +16,8 @@
     display: flex;
     justify-self: center;
 }
+
+.headerText {
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif ;
+}

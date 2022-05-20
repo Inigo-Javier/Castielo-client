@@ -1,23 +1,21 @@
-import { Container, Button, Row, Col } from 'react-bootstrap'
-import { Link } from 'react-router-dom'
+import { Container, Row, Col } from 'react-bootstrap'
+
 import SignupForm from '../../components/SignupForm/SignupForm'
+import './SignupPage.css'
 
 const SignupPage = () => {
 
     return (
-        <Container>
-            <Row>
-                <Col md={{ span: 6, offset: 33 }}>
-                    <Link to="/inicio">
-                        <Button variant="dark" type="submit">vuelve al inicio</Button>
-                    </Link>
-                    <hr />
-                    <h1>Registro</h1>
-                    <hr />
-                    <SignupForm />
-                </Col>
-            </Row>
-        </Container>
+        <div className='registro'>
+            <Container >
+                <Row>
+                    <Col md={{ span: 6, offset: 3 }}>
+                        <h1>Registro</h1>
+                        <SignupForm />
+                    </Col>
+                </Row>
+            </Container>
+        </div>
     )
 }
 

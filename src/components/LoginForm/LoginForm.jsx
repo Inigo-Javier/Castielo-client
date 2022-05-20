@@ -3,6 +3,7 @@ import { useContext, useState } from "react"
 import authService from './../../services/Auth.service'
 import { useNavigate } from 'react-router-dom'
 import { AuthContext } from "../../context/auth.context"
+import './loginForm.css'
 
 const LoginForm = () => {
 
@@ -49,12 +50,12 @@ const LoginForm = () => {
 
 
             <Form.Group className="mb-3" controlId="email">
-                <Form.Label>Email</Form.Label>
+                <Form.Label className="label">Email</Form.Label>
                 <Form.Control type="email" onChange={handleInputChange} name="email" value={email} />
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="password">
-                <Form.Label>Contraseña</Form.Label>
+                <Form.Label className="label">Contraseña</Form.Label>
                 <Form.Control type="password" onChange={handleInputChange} name="password" value={password} />
             </Form.Group>
 
