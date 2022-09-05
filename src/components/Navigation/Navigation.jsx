@@ -45,6 +45,7 @@ const Navigation = () => {
                        
 
                     </Navbar.Collapse>
+                    
                     <NavDropdown title="Empieza" id="basic-nav-dropdown">
                         <NavLink to="/inicio" className='nav-link active'>Inicio</NavLink>
                         <NavLink to="/lugares" className='nav-link active'>Galería</NavLink>
