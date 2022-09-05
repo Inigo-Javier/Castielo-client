@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import placesService from './../../services/Places.services'
+import placesService from '../../services/Places.services'
 
 const GMap = () => {
     const googleMapRef = useRef(null);
@@ -45,8 +45,8 @@ const GMap = () => {
     }
 
     useEffect(() => {
-        initGoogleMap()
         loadPlaces()
+        initGoogleMap()
     }, []);
 
     useEffect(() => loadMarker())
