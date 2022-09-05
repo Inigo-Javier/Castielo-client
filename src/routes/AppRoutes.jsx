@@ -27,7 +27,7 @@ const AppRoutes = () => {
                 </Route>
 
                 <Route path='/video' element={<Video />} />
-                <Route path='*' element={<h1>404</h1>} />
+                <Route path='*' element={<HomePage />} />
 
             </Routes>
         </>
