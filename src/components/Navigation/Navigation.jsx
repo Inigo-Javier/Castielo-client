@@ -1,8 +1,9 @@
 import './Navigation.css'
-import { Container, Nav, Navbar } from 'react-bootstrap'
+import { Container, Navbar } from 'react-bootstrap'
 import { NavLink, useNavigate } from 'react-router-dom'
 import { AuthContext } from '../../context/auth.context'
 import { useContext } from 'react'
+import Modal from '../Modal/Modal'
 
 
 
@@ -40,7 +41,7 @@ const Navigation = () => {
                                 </>
                                 :
                                 <>
-                                    {/* modal */}
+                                    <Modal />
 
                                 </>
                         }
