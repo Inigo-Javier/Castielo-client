@@ -27,19 +27,21 @@ const Navigation = () => {
                             isLoggedIn
                                 ?
                                 <>
-                                    <Nav className="ms-auto">
-                                        <NavLink to="/mapas" className='nav-link active'>Mapa</NavLink>
-                                    </Nav>
 
-                                    <Nav className="ms-auto">
-                                        <NavLink to="/video" className='nav-link active'>conócenos</NavLink>
-                                    </Nav>
+                                    <NavLink to="/mapas" className='nav-link active'>Mapa</NavLink>
+
+
+                                    <NavLink to="/lugares" className='nav-link active'>Lugares</NavLink>
+
+
+                                    <NavLink to="/video" className='nav-link active'>conócenos</NavLink>
+
                                     {user && <NavLink to="/perfil" className='nav-link active'>Bienvenido/a, {user.username}</NavLink>}
                                 </>
                                 :
                                 <>
+                                    {/* modal */}
 
-                                    {/* ventana modal para despèdirse */}
                                 </>
                         }
 
@@ -49,8 +51,9 @@ const Navigation = () => {
                                 <div className='nav-link active' onClick={logout}>Cerrar sesión</div>
                                 :
                                 <>
-                                    <NavLink to="/registro" className='nav-link active'>Registrate</NavLink>
-                                    <NavLink to="/inicio-sesion" className='nav-link active'>Inicio sesión</NavLink>
+                                    <NavLink to="/registro" className='nav-link active'>Registro</NavLink>
+                                    <NavLink to="/inicio-sesion" className='nav-link active'>Sesión</NavLink>
+                                    <NavLink to="/lugares" className='nav-link active'>Lugares</NavLink>
                                 </>
                         }
 

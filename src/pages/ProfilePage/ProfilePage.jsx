@@ -19,7 +19,6 @@ const ProfilePage = () => {
                     </Card.Text>
 
                     <Nav className="ms-auto">
-                        {/* //<NavLink to="/inicio" className='nav-link active'>inicio</NavLink> */}
                         <Link to="/inicio" className=" btn btn-dark  " >inicio</Link>
                     </Nav>
                 </Card.Body>
